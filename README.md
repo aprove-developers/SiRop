@@ -4,7 +4,7 @@ Note that for reasons of simplicity SiRop only deals with rational values for th
 
 ## Run via Docker
 The easiest way to run the artifact is to do so via Docker.
-To that end, please load the provided docker image (see “Releases”) by executing `docker load -i sirop-docker.tar.zst`.
+To that end, please load the provided docker image (see [“Releases”](https://github.com/aprove-developers/SiRop/releases)) by executing `docker load -i sirop-docker.tar.zst`.
 You are then able to run the container and our included artifact via the command `docker run -t sirop-docker EXAMPLE` where `EXAMPLE` is a path to an input file for SiRop.
 
 The included examples can be found under the path `examples/EXAMPLE_NAME` (`/provided-examples` inside the docker container) where `EXAMPLE_NAME` is the name of the example from the table below.
