@@ -6,6 +6,7 @@ Note that for reasons of simplicity SiRop only deals with rational values for th
 The easiest way to run the artifact is to do so via Docker.
 To that end, please load the provided docker image (see [“Releases”](https://github.com/aprove-developers/SiRop/releases)) by executing `docker load -i sirop-docker.tar.zst`.
 You are then able to run the container and our included artifact via the command `docker run -t sirop-docker EXAMPLE` where `EXAMPLE` is a path to an input file for SiRop.
+If you have trouble with loading the docker image, it might be helpful to first unpack the `.tar.zst` file (on linux run `zstd -d sirop-docker.tar.zst`) and then import the resulting `.tar` file by running `docker load -i sirop-docker.tar`.
 
 The included examples can be found under the path `examples/EXAMPLE_NAME` (`/provided-examples` inside the docker container) where `EXAMPLE_NAME` is the name of the example from the table below.
 So if you want to run SiRop via Docker on the `leading` example, then you can do so via executing `docker run -t sirop-docker /provided-examples/leading.sage`.
